@@ -67,7 +67,7 @@ class TreeNode:
 
 if __name__ == "__main__":
     # создание простого бинарного дерева
-    num_nodes = 100
+    num_nodes = 10000
     root = TreeNode(None)
     root = root.create_random_tree(num_nodes)
 
@@ -83,7 +83,7 @@ if __name__ == "__main__":
     end_time_iterative = time.time()
 
     print(f"Заданный ключ: {target_key}, следующий ключ: {next_key_1}")
-    print(f"Время выполнения (рекурсивно): {end_time_recursive - start_time_recursive:.9f} секунд")
+    print(f"Время выполнения (рекурсивно): {end_time_recursive - start_time_recursive:.10f} секунд")
 
     print(f"Заданный ключ: {target_key}, следующий ключ: {next_key_2}")
-    print(f"Время выполнения (итеративно): {end_time_iterative - start_time_iterative:.9f} секунд")
+    print(f"Время выполнения (итеративно): {end_time_iterative - start_time_iterative:.10f} секунд")
